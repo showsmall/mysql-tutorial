@@ -119,7 +119,7 @@ COMMENT='用户表信息';
 - `NULL`：数据列可包含NULL值；
 - `NOT NULL`：数据列不允许包含NULL值；
 - `DEFAULT`：默认值；
-- `PRIMARY`：KEY 主键；
+- `PRIMARY KEY`：主键；
 - `AUTO_INCREMENT`：自动递增，适用于整数类型；
 - `UNSIGNED`：是指数值类型只能为正数；
 - `CHARACTER SET name`：指定一个字符集；
@@ -540,7 +540,7 @@ alter table students rename workmates;
 ### 清空表数据
 
 > 方法一：`delete from 表名;`
-> 方法二：`truncate from "表名";`
+> 方法二：`truncate table "表名";`
 
 - `DELETE:`1. DML语言;2. 可以回退;3. 可以有条件的删除;
 - `TRUNCATE:`1. DDL语言;2. 无法回退;3. 默认所有的表内容都删除;4. 删除速度比delete快。
